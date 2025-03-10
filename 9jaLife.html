@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Nigerian culture through fashion, art, music, food, and more.">
+    <title>9jaLife</title>
+    
+</head>
+<body>
+
+    <header>
+        <h1>9jaLife</h1>
+        <p>We dey vibe Naija style!</p>
+    </header>
+
+   
+    <section class="welcome">
+        <h2>Welcome to 9jaLife!</h2>
+        <p>Your gateway to the rich and vibrant world of Nigerian heritage.
+            Explore the beauty of our traditions, from fashion and food to art, music, and stories.
+             Whether you’re here to celebrate our culture or discover something new, 9jaLife is your space to connect, learn, and embrace the essence of Nigeria.
+            Join us on this exciting journey—there’s something for everyone!</p>
+            
+    </section>
+    <section class="nav-intro-heading">
+        <h2>Find Your Naija Vibe </h2>
+    </section>
+    <nav>
+        <nav>
+            <a href="makeWeYarn.html">
+                <div class="image-container">
+                    <img src="images-36-1.png" alt="History" class="hover-effect" />
+                </div>
+                <span>Mey we Yarn</span>
+            </a>
+            <a href="fashion.html">
+                <div class="image-container">
+                    <img src="fashion.png" alt="Fashion" class="hover-effect" />
+                </div>
+                <span>Fashion</span>
+            </a>
+            <a href="art-music.html">
+                <div class="image-container">
+                    <img src="IMG.png" alt="Art & Music" class="hover-effect" />
+                </div>
+                <span>Art & Music</span>
+            </a>
+            <a href="food2.html">
+                <div class="image-container">
+                    <img src="food2.png" alt="Food" class="hover-effect" />
+                </div>
+                <span>Food</span>
+            </a>
+        </nav>
+        
+    </nav>
+    <script>
+        const images = document.querySelectorAll('.hover-effect');
+        images.forEach(image => {
+            image.addEventListener('mouseover', () => {
+                image.style.transform = 'scale(1.1)';
+                image.style.transition = 'transform 0.3s ease';
+            });
+            image.addEventListener('mouseout', () => {
+                image.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+     <section class="nav-intro-heading">
+        <h2>Let's Learn</h2>
+    </section>
+    <section class="proverb-container">
+        <!-- Proverb Introduction -->
+        <div class="proverb-introduction">
+            <h2>Embracing the Wisdom of Nigerian Proverbs</h2>
+            <p>In Nigeria, proverbs are more than just sayings—they are powerful tools of communication, often used by elders to impart wisdom, share values, and teach life's lessons. Across our diverse languages and cultures, proverbs serve as a bridge between generations, preserving our heritage and guiding us through life's challenges.</p>
+            <p>Through this website, I hope to rekindle this beautiful aspect of our culture among the younger generation. That’s why I’ll be sharing a new "Proverb of the Week" to inspire, educate, and celebrate the richness of Nigerian wisdom.</p>
+        </div>
+    
+        <!-- Proverb of the Week -->
+        <div class="proverb-of-the-week">
+            <h2>Owe Osu (Proverb of the Week)</h2>
+            <blockquote id="proverb">
+                "Àìkú là ńwò, ara ilé ẹni kìí ṣe ọdẹdẹ."
+            </blockquote>
+            <p id="proverb-meaning">
+                <strong>Meaning:</strong> "We hope for life; one does not mock their own family."
+            </p>
+        </div>
+    </section>
+    <script>
+        const proverbs = [
+            { 
+                text: "Àìkú là ńwò, ara ilé ẹni kìí ṣe ọdẹdẹ.", 
+                meaning: "We hope for life; one does not mock their own family."
+            },
+            { 
+                text: "Ohun tí a bá f'owó kàn, kò ni f'owó kàn jí ẹ.", 
+                meaning: "What is given willingly will not be forcefully taken from you."
+            },
+            { 
+                text: "A kì í gbọ́dọ̀ dá ewé kékeré ní agbo.", 
+                meaning: "We must not dismiss small leaves in the preparation of medicine."
+            },
+            { 
+                text: "Bí a bá dá ọmọ n'ìṣẹ́, ká ran ní láṣẹ̀.", 
+                meaning: "If we assign a child work, we must also give them guidance."
+            },
+            { 
+                text: "Ọlọ́jọ́ pípẹ́ kìí dá, ẹni tí ó fẹ́ dá l'ayé ní kù í kọ́.", 
+                meaning: "The patient person will succeed in life; impatience leads to failure."
+            }
+        ];
+    
+        const proverbElement = document.getElementById('proverb');
+        const meaningElement = document.getElementById('proverb-meaning');
+    
+        function displayProverb() {
+            const index = Math.floor(Math.random() * proverbs.length);
+            proverbElement.textContent = `"${proverbs[index].text}"`;
+            meaningElement.innerHTML = `<strong>Meaning:</strong> ${proverbs[index].meaning}`;
+        }
+    
+        // Display a new proverb when the page loads
+        window.addEventListener('load', displayProverb);
+    </script>
+    <section class="intro-heading">
+        <h2>Let Me Put You On</h2>
+    </section>
+    <section class="ay-cooks">
+        <h2>Cooking With Ayo!!!</h2>
+        <p>Meet <strong>Ayo's Kitchen</strong>, your go-to for delicious, authentic Nigerian dishes! Ayomide serves up flavors that bring the heart of Nigeria to your plate.</p>
+        <div class="image-container">
+            <img src="Ayo's Kitchen (4).png" class="ayo-image"/>
+        </div>
+        <div class="social-media">
+            <h3>Follow Ayomide to order some quick quick snacks</h3>
+            <a href="https://www.youtube.com/@ay_bakes_and_cooks_and_more" target="_blank" class="social-icon">
+                <img src="youtube-logo-24.png" alt="YouTube" />
+            </a>
+            <a href="https://www.instagram.com/ay_bakes_and_cooks/profilecard/?igsh=MTlvcnR1OWFlaW96bw%3D%3D" target="_blank" class="social-icon">
+                <img src="instagram-logo-24.png" alt="Instagram" />
+            </a>
+        </div>
+    </section>
+    <section class="podcast-section">
+        <h2>Naija Boldness: Guts and Audacity.</h2>
+        <p>Guts and Audacity is a podcast that celebrates courage and resilience through candid conversations. Each episode delves into bold decisions, defining moments, and inspiring stories of personal growth, risk-taking, and pursuing dreams. It’s a tribute to the grit and determination that empower us to embrace challenges and live authentically.</p>
+        <div class="podcast-content">
+            <div class="podcast-image">
+                <img src="guts.png" alt="Podcast Logo" class="podcast-logo" />
+            </div>
+        </div>
+        <div class="podcast-links">
+                <h4>Listen on your favorite platform:</h4>
+                <a href=https://open.spotify.com/show/0BkGqTPLyxCWvu05qJQHde?si=3390b86546864e7f>
+                    <img src="spotify-logo-24.png" alt="Spotify" />
+                </a>
+                <a href=https://podcasts.apple.com/us/podcast/guts-and-audacity/id1787804503>
+                    <img src="podcast-regular-24.png" alt="Apple Podcasts" />
+                </a>
+        
+        </div>
+       
+    </section>
+    
+    
+
+    <footer>
+        <p>&copy; 2025 9jaLife. All rights reserved.</p>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the conversation in our Make We Yarn section. Share your thoughts and connect with others about Nigerian culture and topics.">
+    <title>Make We Yarn - 9JaLife</title>
+</head>
+<body>
+
+    <header>
+        <h1>9jaTalk</h1>
+        <p>We dey vibe Naija style!</p>
+    </header>
+
+    <section class="make-we-yarn">
+        <h2>Make We Yarn</h2>
+        <div class="discussion">
+            <h3>This Week's Topic: Detty December</h3>
+            <p>Firstly, Welcome back IJGBs. Is Detty December becoming a culture? What are your thoughts?</p>
+            <form id="commentForm" class="comment-form">
+                <textarea placeholder="Share your thoughts..." rows="5"></textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+            <div class="comments-section">
+                <div id="commentsDisplay">
+                    <!-- Posted comments will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const commentForm = document.getElementById('commentForm');
+            const commentsDisplay = document.getElementById('commentsDisplay');
+
+            commentForm.addEventListener('submit', (e) => {
+                e.preventDefault(); // Prevent form submission
+
+                const commentText = commentForm.querySelector('textarea').value.trim();
+                if (commentText) {
+                    const commentDiv = document.createElement('div');
+                    commentDiv.classList.add('comment');
+                    commentDiv.innerHTML = `
+                        <p><strong>You</strong> says:</p>
+                        <p>${commentText}</p>
+                    `;
+                    commentsDisplay.appendChild(commentDiv);
+                    commentForm.querySelector('textarea').value = ''; // Clear textarea
+                }
+            });
+        });
+    </script>
+    <footer>
+        <p>&copy; 2025 9JaLife. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

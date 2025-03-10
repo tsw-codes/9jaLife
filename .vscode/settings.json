@@ -1,0 +1,12 @@
+{
+    "liveServer.settings.port": 5501,
+    "sshfs.configs": [
+        {
+            "name": "umbcgl",
+            "label": "UMBCgl",
+            "host": "gl.umbc.edu",
+            "root": "~/",
+            "username": "osapara1"
+        }
+    ]
+}

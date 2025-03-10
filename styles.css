@@ -1,0 +1,387 @@
+/* Basic styling for the website */
+html, body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background: rgb(244,244,244);
+    background: radial-gradient(circle, rgba(244,244,244,1) 74%, rgba(148,233,164,1) 92%);
+    color: #000000;
+    overflow-y: auto; /* Ensures vertical scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    height: 100%;
+    
+}
+
+/* Header Section */
+header {
+    background: rgb(244,244,244);
+    background: radial-gradient(circle, rgba(244,244,244,1) 74%, rgba(148,233,164,1) 92%);
+    color: #000000;
+    text-align: center;
+    padding: 20px 0; /* Space around the header */
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks elements vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    height: 150px; /* Adjust height as needed */
+}
+
+header h1 {
+    margin: 0; /* Removes extra space */
+    font-size: 3.5rem; /* Adjust size as needed */
+    color: #000;
+}
+
+header p {
+    margin: 0; /* Ensures no extra space around the tagline */
+    font-size: 1.5rem; /* Adjust size for readability */
+    font-weight: bold;
+    color: #075015;
+}
+
+
+.nav-intro-heading {
+    text-align: center;
+    margin: 30px 0; /* Space above and below */
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 25px;
+    color: #075015;
+   
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    
+}
+
+nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav .image-container {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+nav a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    border-radius: 10px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 2);
+}
+
+nav a span {
+    font-size: 25px;
+    color: #000000; /* Text color */
+    font-weight: bold;
+}
+
+
+/* Welcome Section */
+section.welcome {
+    padding: 25px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+
+section.welcome h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+    text-align: center;
+}
+
+section.welcome p {
+    font-size: 25px;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+}
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for the entire page */
+    overflow-y: auto; /* Ensures vertical scrolling */
+}
+.intro-heading {
+    text-align: center;
+    margin: 30px 0; /* Space above and below */
+    font-family: cursive;
+   
+}
+
+.intro-heading h2 {
+    font-size: 2.5rem;
+    color: #107032; /* Dark green for contrast */
+    font-weight: bold;
+    text-transform: uppercase; /* Makes the text uppercase */
+    letter-spacing: 2px; /* Adds spacing between letters */
+}
+
+.proverb-container {
+    display: flex;
+    gap: 20px; /* Space between the two sections */
+    justify-content: center; /* Centers the container on the page */
+    align-items: flex-start; /* Aligns sections to the top */
+    margin: 20px auto; /* Adds spacing around the container */
+    max-width: 1200px; /* Ensures the content doesn’t stretch too wide */
+}
+
+.proverb-introduction, .proverb-of-the-week {
+    flex: 1; /* Ensures both sections take equal space */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.proverb-introduction {
+    text-align: left;
+}
+
+.proverb-introduction h2, .proverb-of-the-week h2 {
+    font-size: 2rem;
+    font-family: Georgia, serif;
+    color: #359654;
+    margin-bottom: 15px;
+}
+
+.proverb-introduction p, .proverb-of-the-week p {
+    font-size: 1.2rem;
+    color: #555;
+    font-family: Georgia, serif;
+    line-height: 1.6;
+}
+
+.proverb-of-the-week blockquote {
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin: 10px 0;
+}
+
+.proverb-of-the-week p {
+    font-size: 1rem;
+    color: #34495e;
+}
+
+
+.make-we-yarn {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.make-we-yarn h2 {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    color: #107032;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.make-we-yarn .discussion {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.make-we-yarn h3 {
+    font-family: Georgia, serif;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.make-we-yarn p {
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.comment-form button {
+    background-color: #075015;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.comment-form button:hover {
+    background-color: #308a3a;
+}
+
+.comments-section {
+    margin-top: 20px;
+}
+
+.intro-heading {
+    text-align: center;
+    margin: 30px 0; /* Space above and below */
+    font-family: cursive;
+   
+}
+
+.intro-heading h2 {
+    font-size: 2.5rem;
+    color: #107032; /* Dark green for contrast */
+    font-weight: bold;
+    text-transform: uppercase; /* Makes the text uppercase */
+    letter-spacing: 2px; /* Adds spacing between letters */
+}
+.ay-cooks {
+    padding: 10px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    margin: 20px auto; /* Centered horizontally */
+    max-width: 500px; /* Wider background */
+    text-align: left;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: -400px;
+}
+
+.ay-cooks h2 {
+    color: #29712e;
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.ay-cooks p {
+    color: #555;
+    font-size: 1.2rem;
+    font-family: Georgia, serif;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.ayo-image {
+    width: 300px; /* Smaller width */
+    height: 300px; /* Maintain aspect ratio */
+    border-radius: 10px; /* Circular image */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    
+}
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers image horizontally */
+    align-items: center; /* Centers image vertically (if necessary) */
+    margin: 20px 0; /* Adds spacing around the container */
+}
+
+.ayo-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.podcast-section {
+    padding: 10px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    margin: 20px auto; /* Centered horizontally */
+    max-width: 800px; /* Wider background */
+    text-align: left;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: +400px;
+    top: -650px;
+}
+
+.podcast-section h2 {
+    font-size: 2.5rem;
+    color: #1f883b;
+    font-family: Georgia, serif;
+    margin-bottom: 15px;
+}
+
+.podcast-section p {
+    font-size: 1.2rem;
+    color: #555;
+    font-family: Georgia, serif;
+    margin-bottom: 20px;
+}
+
+.podcast-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.podcast-image img {
+    width: 300px; /* Smaller width */
+    height: 300px; /* Maintain aspect ratio */
+    border-radius: 10px; /* Circular image */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.podcast-links {
+    text-align: left;
+}
+
+.podcast-links p {
+    font-size: 1.2rem;
+    color: #cc2626;
+    margin-bottom: 10px;
+}
+
+.podcast-link img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.podcast-link img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Footer Section */
+footer {
+    background: rgb(244,244,244);
+    background: radial-gradient(circle, rgba(244,244,244,1) 74%, rgba(148,233,164,1) 92%);
+    
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    position: relative; /* Footer stays at the bottom of the content */
+    bottom: auto;
+}

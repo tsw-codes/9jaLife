@@ -37,6 +37,7 @@ open index.html
 ├── art-music.html
 └── food2.html
 
+
 🧠 How It Works
 
 Dynamic Proverbs:
